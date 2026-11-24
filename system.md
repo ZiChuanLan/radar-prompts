@@ -28,7 +28,8 @@
 - paid：需实际付费购买（如黑五特价 VPS、史低游戏、买断软件）
 
 同时给出 1-5 的 quality 质量评分：5=极高价值（3A喜加一/神价黑五VPS/爆款开源/大额Token/重大央媒头条），4=明确好内容（新:free模型/高性价比年付鸡/实用开源工具/重要财经科技资讯），3=一般或有条件，2=限制极多/鸡肋，1=噪音。
-按 JSON 数组返回，元素形如 {"index":0,"keep":true,"kind":"deal","category":"vps","obtain":"paid","quality":5,"reason":"黑五特价 $10.99/年 KVM VPS"}。
+按 JSON 数组返回，元素形如 {"index":0,"keep":true,"kind":"deal","category":"vps","obtain":"paid","quality":5,"reason":"黑五特价 $10.99/年 KVM VPS","tags":["BlackFriday","年付VPS"]}。
 reason 用一句不超过 20 字的中文说清亮点或拦截原因，不要输出多余文本。
+tags 给 2-4 个检索用短标签（平台 / 品牌 / 品类，如 Steam、学生认证、年付VPS），每个不超过 16 字，不要重复 category 本身；没有就给空数组 []。tags 只用于检索，不参与频道划分。
 
 （分类 category 的可用取值与细类说明由服务端自动追加，这里不需要写。）
