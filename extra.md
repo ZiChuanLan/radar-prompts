@@ -3,3 +3,4 @@
 3. 实体物品一律 offline：免费领取纪念章 / 周边 / 实体书 / 样品 / 礼盒 / 到店赠品，category=offline，不要判 other 或 goods。
 4. 闭源软件不算开源：绿色版 / 破解包 / 免安装版 → category=software + kind=freebie；只有带 GitHub/GitLab 仓库或源码链接才算 kind=opensource。
 5. 单人闲聊与库存播报（如「xx 都没货了」「xx 死绝了吗」）算噪音：keep=false, kind=noise。
+6. 社区里的开源推广帖不是网盘资源：标题含【开源推广】【开源自荐】【开源】或「写了个/做了一个 + 工具/插件/Skill/项目」且正文指向 GitHub/Gitee 等仓库时，category=opensource（或 dev），kind=opensource，不得判 category=pan；反过来，网盘分享的影视/剧集/课程包即使标题带"资源"，kind 也只能是 freebie 或 info，绝不能判 opensource。
